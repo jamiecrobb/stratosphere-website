@@ -1,0 +1,53 @@
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5em;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 0.5em;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #777777;
+}
+
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  cursor: not-allowed;
+}
+
+.button--purple {
+  background-color: #6e44e6;
+}
+.button--pink {
+  background-color: #d86a7a;
+}
+.button--gray {
+  background-color: #3e3e3e;
+}
+
+.button--big {
+  font-size: 2.5em;
+}
+
+@media (max-width: 43em) {
+  .button {
+    margin-right: 0;
+  }
+
+  .button--big {
+    font-size: 1.8em;
+  }
+}
